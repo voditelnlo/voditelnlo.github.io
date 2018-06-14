@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+
+		<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+		<title>Домашняя страница</title>
+		<style>
+			img {
+				margin-right: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<ul>
+				<a title="" href=""></a>
+				<a title="Elastix" href="http://10.171.37.8/index.php?menu=control_panel">Elastix</a>
+				<a title="DHCP" href="https://10.171.37.13/status_dhcp_leases.php">DHCP</a>
+				<a title="SambaMain" href="http://10.171.37.12/diag_infos_samba.php">SambaMain</a>
+				<a title="CommandMain" href="http://10.171.37.12/exec.php">CommandMain</a>
+				<a title="Backup" href="http://10.171.37.2/index.php">Backup</a>
+				<a title="VoIP" href="http://10.171.37.9/">VoIP</a>
+				<br></br>
+				<a title="ЖКХ" href="https://xn--f1aijeow.xn--p1ai/office/my_home"></a>
+				<a title="Энергосбыт" href="https://narod.nskes.ru"></a>
+				<a title="Главное хвост" href="http://glavnoehvost.ru"></a>
+				<a title="Сбербанк" href="https://online.sberbank.ru/CSAFront/index.do"></a>
+				<a title="ВТБ" href="https://online.vtb.ru/content/v/ru/login.html"></a>
+				<a title="НГС" href="https://ngs.ru/"></a>
+				<a title="Mail.ru" href="https://e.mail.ru/cgi-bin/msglist"></a>
+				<a title="e2e4" href="https://novosibirsk.e2e4online.ru"></a>
+				<a title="КиноПоиск" href="https://www.kinopoisk.ru/mykp/movies/"></a>
+				<a title="ВК" href="https://vk.com/al_im.php"></a>
+				<a title="RuTor" href="http://zerkalo-rutor.org"></a>
+				<a title="Календарь" href="https://calendar.google.com/calendar"></a>
+				<a title="Переводчик" href="https://translate.google.ru/"></a>
+				<a title="Owa" href="https://owa.zdravnsk.ru/owa/"></a>
+				<a title="Godville" href="https://godville.net/superhero"></a>
+				<a title="2gis" href="https://2gis.ru/novosibirsk"></a>
+				<a title="ГуглоДиск" href="https://drive.google.com/drive/my-drive"></a>
+				<a title="ТыТруба" href="https://www.youtube.com/"></a>
+				<a title="ЯндексМузыка" href="https://music.yandex.ru/home"></a>
+				<a title="WhatsApp" href="https://web.whatsapp.com/"></a>
+				<a title="Конвертер" href="https://www.online-convert.com/ru?fl=ru"></a>
+			</ul>
+		</center>
+	</body>
+	<script>
+		$(function() {
+			$("ul a[href^='http']").each(function() {
+				$(this).prepend('<img src="https://www.google.com/s2/favicons?domain=' + this.href + '" alt="favicon">');
+			});
+		});
+	</script>
+</html>
